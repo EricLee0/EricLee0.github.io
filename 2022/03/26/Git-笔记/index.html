@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022 | Hexo</title>
+  <title>Git 笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+  <meta name="description" content="一、第一次使用Git1、配置邮箱地址  git config –global user.email “你的邮箱地址”  2、配置用户名  git config –globa user.name “你的名字”  二、拉取项目1、现确认目录 2、拉取命令  git clone 项目地址  三、分支管理项目中一般最少两个分支；  main分支：主分支，发布在生产环境运行的内容 develop分支：主分支">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git 笔记">
+<meta property="og:url" content="http://example.com/2022/03/26/Git-%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、第一次使用Git1、配置邮箱地址  git config –global user.email “你的邮箱地址”  2、配置用户名  git config –globa user.name “你的名字”  二、拉取项目1、现确认目录 2、拉取命令  git clone 项目地址  三、分支管理项目中一般最少两个分支；  main分支：主分支，发布在生产环境运行的内容 develop分支：主分支">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-26T14:54:07.000Z">
+<meta property="article:modified_time" content="2022-03-26T15:26:20.837Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,76 +154,375 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Git-笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Git 笔记
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/03/26/Git-%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+
+        
+        <a href="/2022/03/26/Git-%E7%AC%94%E8%AE%B0/" class="archive-article-date">
   	<time datetime="2022-03-26T14:54:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-26</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/26/Git-%E7%AC%94%E8%AE%B0/">Git 笔记</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、第一次使用Git"><a href="#一、第一次使用Git" class="headerlink" title="一、第一次使用Git"></a>一、第一次使用Git</h2><p>1、配置邮箱地址</p>
+<ul>
+<li>git config –global user.email “你的邮箱地址”</li>
+</ul>
+<p>2、配置用户名</p>
+<ul>
+<li>git config –globa user.name “你的名字”</li>
+</ul>
+<h2 id="二、拉取项目"><a href="#二、拉取项目" class="headerlink" title="二、拉取项目"></a>二、拉取项目</h2><p>1、现确认目录</p>
+<p>2、拉取命令</p>
+<ul>
+<li>git clone 项目地址</li>
+</ul>
+<h2 id="三、分支管理"><a href="#三、分支管理" class="headerlink" title="三、分支管理"></a>三、分支管理</h2><p>项目中一般最少两个分支；</p>
+<ul>
+<li>main分支：主分支，发布在生产环境运行的内容</li>
+<li>develop分支：主分支，发布的测试环境的内容</li>
+</ul>
+<p>1、查看分支</p>
+<ul>
+<li>查看远程库分支<ul>
+<li>git branch -r</li>
+</ul>
+</li>
+<li>查看本地库分支<ul>
+<li>git branch </li>
+</ul>
+</li>
+</ul>
+<p>2、将远程分支拉取到本地并创建新分支</p>
+<ul>
+<li>git fetch origin x(远程分支名):y(本地分支名)</li>
+</ul>
+<p>3、关联本地分支与远程分支</p>
+<ul>
+<li>git branch –set-upstream-to=origin/x(远程分支名) y(本地分支名)</li>
+</ul>
+<p>4、切换分支</p>
+<ul>
+<li>git checkout y(分支名)</li>
+</ul>
+<h2 id="四、推送内容"><a href="#四、推送内容" class="headerlink" title="四、推送内容"></a>四、推送内容</h2><p>1、拉取该分支最新数据</p>
+<ul>
+<li>git pull</li>
+</ul>
+<p>2、将文件添加到本地缓存</p>
+<ul>
+<li>单个文件<ul>
+<li>git add xxx(文件名)</li>
+</ul>
+</li>
+<li>批量添加<ul>
+<li>git add -a</li>
+</ul>
+</li>
+</ul>
+<p>3、将缓存区内容提交到仓库</p>
+<ul>
+<li>git commit -m “提交到缓存区”</li>
+</ul>
+<p>4、刷新</p>
+<ul>
+<li>git push</li>
+</ul>
+<h2 id="五、代码合并"><a href="#五、代码合并" class="headerlink" title="五、代码合并"></a>五、代码合并</h2><p>当多人同步更改时,上传分支会造成冲突,此时要进行代码合并.</p>
+<p>1、切换到deleop分支，并且更新</p>
+<ul>
+<li>git checkout develop</li>
+<li>git pull</li>
+</ul>
+<p>2、切换到自己的分支feature</p>
+<ul>
+<li>git checkout feature</li>
+</ul>
+<p>3、合并到某分支到当前分支</p>
+<ul>
+<li>git merge develop</li>
+</ul>
+<h2 id="六、冲突解决"><a href="#六、冲突解决" class="headerlink" title="六、冲突解决"></a>六、冲突解决</h2><p>1、在合并分支时会提示差异点，解决冲突后刷新</p>
+<ul>
+<li>git push</li>
+</ul>
+<h2 id="七、获取更新时意外"><a href="#七、获取更新时意外" class="headerlink" title="七、获取更新时意外"></a>七、获取更新时意外</h2><p>报错：Git pull - please move or remove them before you can merge</p>
+<p>处理方法：git clean -d -f</p>
+<h2 id="八、开发到一半需要切换分支"><a href="#八、开发到一半需要切换分支" class="headerlink" title="八、开发到一半需要切换分支"></a>八、开发到一半需要切换分支</h2><p>1、储藏当前分支的工作状态</p>
+<ul>
+<li>git stash</li>
+</ul>
+<p>2、查看缓存区是否干净</p>
+<ul>
+<li>git stash status</li>
+</ul>
+<p>3、处理完其他分支，切回自己分支</p>
+<ul>
+<li>git checkout feature</li>
+</ul>
+<p>4、查看储存的工作</p>
+<ul>
+<li>git stash list</li>
+</ul>
+<p>5、打开储存的工作</p>
+<ul>
+<li>git stash apply 工作名</li>
+</ul>
+<p>6、删除工作</p>
+<ul>
+<li>git stash drop 工作名</li>
+</ul>
+<p>7、合并5和6操作</p>
+<ul>
+<li>git stash pop 工作名</li>
+</ul>
+<h2 id="九、版本退回"><a href="#九、版本退回" class="headerlink" title="九、版本退回"></a>九、版本退回</h2><p>1、查看历史版本</p>
+<ul>
+<li>git log</li>
+</ul>
+<p>2、显示简版历史版本</p>
+<ul>
+<li>git log –prettuy=oneline</li>
+</ul>
+<p>3、退回上一版本</p>
+<ul>
+<li>git reset –hard HEAD</li>
+</ul>
+<p>4、退回指定版本</p>
+<ul>
+<li>git rest –hard commit_id</li>
+</ul>
+<h2 id="十、命令总结"><a href="#十、命令总结" class="headerlink" title="十、命令总结"></a>十、命令总结</h2><p>1、查看用户名或配置用户名</p>
+<ul>
+<li>git config –global user.name</li>
+</ul>
+<p>2、查看email或配置email</p>
+<ul>
+<li>git config –global user.email</li>
+</ul>
+<p>3、将远程库克隆到本地</p>
+<ul>
+<li>git clone</li>
+</ul>
+<p>4、查看分支</p>
+<ul>
+<li>git clone</li>
+</ul>
+<p>5、查看远程分支</p>
+<ul>
+<li>git clone -r</li>
+</ul>
+<p>6、创建分支</p>
+<ul>
+<li>git branch –set-upstream</li>
+</ul>
+<p>7、将本地分支与远程分支做关联</p>
+<ul>
+<li>git branch –set-upstream-to=origin/remote_branch your_branch</li>
+</ul>
+<p>8、获取更新</p>
+<ul>
+<li>git pull</li>
+</ul>
+<p>9、删除当前目录下没有被tranck过的文件</p>
+<ul>
+<li>git clean -d -f</li>
+</ul>
+<p>10、将目标分支合并到当前分支</p>
+<ul>
+<li>git merge <name></li>
+</ul>
+<p>11、将内容添加到暂存区</p>
+<ul>
+<li>git commit</li>
+</ul>
+<p>12、将本地文件提交内容推送到远程仓库</p>
+<ul>
+<li>git push</li>
+</ul>
+<p>13、切换分支</p>
+<ul>
+<li>git checkout</li>
+</ul>
+<p>14、删除分支</p>
+<ul>
+<li>git branch -d <name></li>
+</ul>
+<p>15、储藏分支是内容</p>
+<ul>
+<li>git stash</li>
+</ul>
+<p>16、查看当前分支的储藏列表</p>
+<ul>
+<li>git stash list</li>
+</ul>
+<p>17、恢复指定储藏内容</p>
+<ul>
+<li>git stash apply</li>
+</ul>
+<p>18、删除指定储藏内容</p>
+<ul>
+<li>git stash drop</li>
+</ul>
+<p>19、恢复并删除指定内容</p>
+<ul>
+<li>git stash pop</li>
+</ul>
+<p>20、显示工作目录和暂存区状态</p>
+<ul>
+<li>git status</li>
+</ul>
+<p>21、显示commit的详细日志</p>
+<ul>
+<li>git log</li>
+</ul>
+<p>22、显示commit的ID描述</p>
+<ul>
+<li>git log –hard HEAD</li>
+</ul>
+<p>23、根据commit id 退回指定版本</p>
+<ul>
+<li>git reset – hard commit_id</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/03/26/Git-%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/03/26/hello-world/" class="archive-article-date">
-  	<time datetime="2022-03-26T13:58:04.060Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-26</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/03/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/26/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -242,8 +545,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
