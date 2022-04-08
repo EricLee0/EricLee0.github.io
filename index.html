@@ -59,7 +59,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 2
+			总文章数 3
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -141,6 +141,253 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、基础篇"><a href="#一、基础篇" class="headerlink" title="一、基础篇"></a>一、基础篇</h2><h3 id="1-基础示例"><a href="#1-基础示例" class="headerlink" title="1. 基础示例"></a>1. 基础示例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;文档标题&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">   </span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    文档内容......</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2-基础结构"><a href="#2-基础结构" class="headerlink" title="2.基础结构"></a>2.基础结构</h3><ul>
+<li><p>html文档分为文本+标记，通过显示标记语言对文本进行修饰，然后表达渲染后的文本内容</p>
+</li>
+<li><p>一个网页由声明+head+body三部分组成</p>
+<ul>
+<li><!DOCTYPE html> 声明文档使用HTML5语法</li>
+<li>head 部分在页面中不显示</li>
+<li>body 部分为显示在页面中的内容<h2 id="二、常用标签"><a href="#二、常用标签" class="headerlink" title="二、常用标签"></a>二、常用标签</h2><h3 id="1-文本标签"><a href="#1-文本标签" class="headerlink" title="1. 文本标签"></a>1. 文本标签</h3></li>
+</ul>
+</li>
+<li><p>&lt;hn&gt;…&lt;/hn&gt;    n为1-6的数字。标记为标题，加粗独立行。</p>
+</li>
+<li><p>&lt;i&gt;…&lt;/i&gt;    斜体</p>
+</li>
+<li><p>&lt;em&gt;…&lt;/em&gt;    强调斜体</p>
+</li>
+<li><p>&lt;b&gt;…&lt;/b&gt;    加粗</p>
+</li>
+<li><p>&lt;strong&gt;…&lt;/strong&gt;    强调加粗，方便搜索引擎收录</p>
+</li>
+<li><p>&lt;cite&gt;…&lt;/cite&gt;    作品标题（引用）</p>
+</li>
+<li><p>&lt;sub&gt;…&lt;/sub&gt;    下标</p>
+</li>
+<li><p>&lt;sup&gt;…&lt;/sup&gt;    上标</p>
+</li>
+<li><p>&lt;del&gt;…&lt;/del&gt;    删除线</p>
+<h3 id="2-格式化标签"><a href="#2-格式化标签" class="headerlink" title="2. 格式化标签"></a>2. 格式化标签</h3></li>
+<li><p>&lt;br/&gt;    换行</p>
+</li>
+<li><p>&lt;p&gt;…&lt;/p&gt;    换段</p>
+</li>
+<li><p>&lt;hr/&gt;    水平分割线</p>
+</li>
+<li><p>列表</p>
+<ul>
+<li><p>&lt;ul&gt;…&lt;/ul&gt;    无序列表</p>
+</li>
+<li><p>&lt;ol&gt;…&lt;/ol&gt;    有序列表，其中type的值：代表起始值。</p>
+</li>
+<li><p>&lt;li&gt;…&lt;/li&gt;    列表项，在每一个列表中使用</p>
+</li>
+<li><p>&lt;dl&gt;…&lt;/dl&gt;    自定义列表</p>
+</li>
+<li><p>&lt;dt&gt;…&lt;/dt&gt;    自定义列表头</p>
+</li>
+<li><p>&lt;dd&gt;…&lt;/dd&gt;    自定义列表内容，会缩进</p>
+</li>
+</ul>
+</li>
+<li><p>&lt;div&gt;…&lt;/div&gt;    常用于组合块元素（高度为0，宽度填满），通过CSS对这些元素进行格式化</p>
+</li>
+<li><p>&lt;span&gt;…&lt;/span&gt;    常用于包含的文本（没有特殊效果），可以使用CSS对他进行格式化，或通过JavaScript对他进行操作</p>
+<h3 id="3-图片标签"><a href="#3-图片标签" class="headerlink" title="3. 图片标签"></a>3. 图片标签</h3></li>
+<li><p>/<img/>    在网页中插入一张图片</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>src：图片引用地址，图片名及url地址。（可以使用相对地址，或者网络地址）</li>
+<li>alt：图片加载失败时的提示信息</li>
+<li>title：文字提示的属性。（把鼠标放在图片上时提示的文字）</li>
+<li>width：图片宽度</li>
+<li>height：图片高度（通常高度和宽度只使用一个，否则容易失真）</li>
+<li>border：边框线粗细（颜色与字体颜色相同，通常不用）<h3 id="4-超级链接标签"><a href="#4-超级链接标签" class="headerlink" title="4. 超级链接标签"></a>4. 超级链接标签</h3></li>
+</ul>
+</li>
+<li><p>&lt;a href=””&gt;…&lt;/a&gt;    网页中插入超级链接</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>href：必填项，指链接跳转地址</li>
+<li>target：表示链接的打开方式<ul>
+<li>_blank  新窗口</li>
+<li>_parent  父窗口</li>
+<li>_self  本窗口（默认）</li>
+<li>_top  顶级窗口</li>
+</ul>
+</li>
+<li>framename  窗口名</li>
+<li>title：文字提示属性（详情）</li>
+</ul>
+</li>
+<li><p>锚点链接：</p>
+<ul>
+<li>&lt;a id=”a1”&gt;</a>  通过id来定义一个锚点，以前用name</li>
+<li>&lt;a href=”#a1”&gt;跳转a1处&lt;a&gt;  也可以在#前加入其他页面链接<h3 id="5-表格标签"><a href="#5-表格标签" class="headerlink" title="5. 表格标签"></a>5. 表格标签</h3></li>
+</ul>
+</li>
+<li><p>&lt;table&gt;…&lt;\table&gt;    表格标签</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>border    表格线，0是没有</li>
+<li>width    表格宽度</li>
+<li>cellspacing    单元格之间的距离，默认是2，0时没有缝隙</li>
+<li>cellpadding    单元格的字于四边保持的最小距离，默认是0</li>
+</ul>
+</li>
+<li><p>&lt;capion&gt;…&lt;/capion&gt;    表格标题</p>
+</li>
+<li><p>&lt;tr&gt;…&lt;/tr&gt;    行标签</p>
+</li>
+<li><p>&lt;th&gt;…&lt;/th&gt;    列头标签</p>
+</li>
+<li><p>&lt;td&gt;…&lt;/td&gt;    列标签</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>rowapan  跨行</li>
+<li>colspan  跨列</li>
+</ul>
+</li>
+<li><p>&lt;thead&gt;…&lt;/thead&gt;    表头</p>
+</li>
+<li><p>&lt;tbody&gt;…&lt;/tbody&gt;    表体</p>
+</li>
+<li><p>&lt;tfoot&gt;…&lt;/tfoot&gt;    表尾</p>
+<h3 id="6-表单标签"><a href="#6-表单标签" class="headerlink" title="6. 表单标签**"></a>6. 表单标签**</h3></li>
+<li><p>&lt;form&gt;…&lt;/form&gt;    表单标签</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>action  目标地址，就是当提交表单时，提交到的地址。</li>
+<li>method  发送方式，分为get（以明文的方式提交），post（以隐藏的方式提交）</li>
+</ul>
+</li>
+<li><p>&lt;input/&gt;    表单项标签，通过不同type创建不同表单项</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>type 表单项类型<ul>
+<li>text  文本</li>
+<li>password  密码</li>
+<li>radio  单选</li>
+<li>checkbox  复选</li>
+<li>submit  提交</li>
+<li>reset  重置</li>
+<li>button  按钮，没有效果，可以添加事件</li>
+<li>file  上传文件</li>
+<li>image  图片</li>
+<li>email  邮箱</li>
+<li>number  下拉选择数字</li>
+<li>url  网址</li>
+<li>date  日历</li>
+<li>color  颜色</li>
+</ul>
+</li>
+<li>name  变量名字，实现互相排斥需要相同的name</li>
+<li>value  默认值</li>
+<li>disabled  默认不能修改</li>
+<li>checked  默认选中，针对单选和多选使用</li>
+<li>min  最小值</li>
+<li>max  最大值</li>
+<li>maxlength  长度</li>
+</ul>
+</li>
+<li><p>&lt;select&gt;  文本选项</p>
+<ul>
+<li>&lt;/option&gt;…&lt;option&gt;  每一项使用此标记，selected为默认选此项</li>
+<li><optgroup>  对下拉框分组</li>
+</ul>
+</li>
+<li><p>&lt;datalist&gt;…&lt;/datalist&gt;  可选的下拉列表</p>
+<ul>
+<li>&lt;/option&gt;…&lt;option&gt;  每一项使用此标记，selected为默认选此项</li>
+</ul>
+</li>
+<li><p>&lt;textarea&gt;…&lt;/textarea&gt;  多行文本输入</p>
+</li>
+<li><p>&lt;button&gt;…&lt;/botton&gt;  标签自定义按钮</p>
+<h3 id="7-行内框架标签"><a href="#7-行内框架标签" class="headerlink" title="7. 行内框架标签"></a>7. 行内框架标签</h3></li>
+<li><p>&lt;iframe&gt;…&lt;/iframe&gt;  在网页放另一个网页</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>src：规定在iframe中显示的url</li>
+<li>name：规定iframe的名称</li>
+<li>height：高度</li>
+<li>width：宽度</li>
+<li>frameborder：是否显示边框<h3 id="8-多媒体标签"><a href="#8-多媒体标签" class="headerlink" title="8. 多媒体标签"></a>8. 多媒体标签</h3></li>
+</ul>
+</li>
+<li><p>&lt;audio&gt;…&lt;autio&gt;  音频标签</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>src:音频引用的地址</li>
+<li>controls，是否显示控制</li>
+</ul>
+</li>
+<li><p>&lt;video&gt;…&lt;video&gt;  视频标签</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li>src:视频引用的地址</li>
+<li>controls，是否显示控制</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/04/08/html/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-Git-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
